@@ -8,6 +8,7 @@ type FullScreenProps = {
   center?: boolean;
   padding?: number;
   gap?: number;
+  borderWidth?: number;
 };
 
 export default function Fullscreen({
@@ -15,10 +16,12 @@ export default function Fullscreen({
   center,
   padding,
   gap,
+  borderWidth,
 }: FullScreenProps) {
   const customStyle = {
     gap,
     padding,
+    borderWidth,
   };
 
   return (
